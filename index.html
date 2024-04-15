@@ -1,9 +1,14 @@
 <html>
   <head>
     <style>
-      .nav {
-        display: flex;
 
+      body{
+        background-color:cadetblue;
+      }
+
+
+     .nav {
+        display: flex;
         justify-content: space-around;
       }
 
@@ -11,6 +16,9 @@
         display: flex;
         gap: 15%;
         list-style: none;
+        
+      
+
       }
       .paragraph {
         width: 300px;
@@ -21,6 +29,8 @@
         flex-direction: row;
         display: flex;
         justify-content: space-around;
+        box-sizing: border-box;
+      
       }
      .footer{
         flex-direction: row;
@@ -34,24 +44,22 @@ margin-top: 120px;
     </style>
   </head>
 
-  <body>
+  <body> <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <div class="nav">
       <div>
-        <h1>Logo</h1>
+        <img src="./assets/Olivia_Wilson-removebg-preview.png" alt="" width="200" height="200">
       </div>
 
       <ul>
-        <li>
-          <a href=""></a>
-          Home
-        </li>
-        <li><a href=""></a>About</li>
-        <li><a href=""></a>Contact</li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
       </ul>
     </div>
 
     <video width="1820" height="440" controls>
-      <source src="https://youtu.be/F1ILGTXKUQM" type="video/mp4" />
+      <source src="./assets/- Introducing Portenta Mid Carrier and Arduino Pro 4G Module EMEA_Global.mp4" type="video/mp4" />
     </video>
     <div>
       <div class="container">
@@ -61,7 +69,7 @@ margin-top: 120px;
           </div>
           <div>
             <h2>BIO</h2>
-            <p class="paragraph">
+            <p class="paragraph" >
               I am a learner at mlab. I am doing this to gain more knowledge and
               get more experience. This programe makes me aware of things I did
               not know about in technology.<br /><br />
@@ -72,7 +80,7 @@ margin-top: 120px;
           </div>
           
         </div>
-        <img src="./assets/yvette.png" alt="" width="400" height="500">
+        <img src="./assets/IMG_20240408_084521.jpg" alt="" width="400" height="400">
       </div>
     </div>
     <div class="footer">
@@ -86,8 +94,12 @@ margin-top: 120px;
   <div>
     <h2> links</h2>
     <ul>
-      <li>
-        <a href="https://www.youtube.com/watch?v=cCKYLzEJ8b0">youtube</a>
+      <li><div class="social-icons">
+        <a href="https://www.facebook.com/yvette.motlhalane" class="social-icons"><box-icon type='logo' name='facebook-circle'></box-icon></a>
+        <a href="api.whatsapp.com/send?phone=+27651518227" class="social-icons" ><box-icon type='logo' name='whatsapp-square'></box-icon></a>
+        <a href="https://www.youtube.com/watch?v=cCKYLzEJ8b0" class="social-icons"></a><box-icon name='youtube' type='logo' ></box-icon></a>     
+      </div>
+       
       </li>
      
     </ul>
